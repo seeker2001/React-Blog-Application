@@ -1,0 +1,278 @@
+/* general styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+.bold-text-1 {
+  font-weight: 500;
+}
+
+.bold-text-2 {
+  font-weight: 700;
+}
+
+/* styling for header (Navbar) */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #00838d;
+  color: white;
+  align-items: flex-start;
+  position: sticky;
+  padding: 1rem 0.7rem 0.5rem 0.7rem;
+  border-bottom: 0.04rem solid rgb(154 147 147);
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 0.4rem 0 0.4rem;
+}
+
+nav a {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.nav-app-title {
+  text-decoration: none;
+  color: white;
+}
+
+nav a,
+nav a:visited {
+  color: #ccd0d7;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+  background-color: f2f8f9;
+  border-radius: 0.3rem;
+}
+
+/* Like button for blogs */
+.like-button {
+  margin: 0 0.25rem 0 0;
+  background: transparent;
+  border: none;
+  color: #000;
+  font-size: 1rem;
+}
+
+.post-liked {
+  color: #13b898;
+}
+
+/* Home Page blogs styling */
+.blogs-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 1rem;
+}
+
+.blog {
+  width: 19rem;
+  height: 15rem;
+  padding: 0.5rem;
+  box-shadow: 0 4px 5px lightblue;
+  background-color: #f2f8f9;
+  position: relative;
+  margin: 1rem;
+}
+
+.blog-main {
+  display: inline-block;
+  padding: 0.3rem;
+  width: 95%;
+  height: 12rem;
+  text-decoration: none;
+
+  border-bottom: 1.5px solid #1d5862;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.blog-category {
+  color: white;
+  background-color: #58969a;
+  margin-top: 1.3rem;
+  padding: 0.3rem 1.3rem;
+  border-radius: 0.5rem;
+  width: fit-content;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.3rem 0 0.3rem 0;
+  font-weight: 500;
+}
+
+.blog-main:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid #cccccc;
+  background-color: white;
+}
+
+.blog-main:hover:before {
+  transform: scale(2.15);
+}
+
+.blog h4 {
+  color: #262626;
+  margin-bottom: 1rem;
+}
+
+.blog p {
+  color: #666666;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: #00838d;
+  border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.view-like-div {
+  position: absolute;
+  margin-top: 0.4rem;
+  bottom: 10px;
+}
+
+/* Single BlogPost Page styling */
+.blog-page {
+  padding: 1rem 4rem 1rem 4rem;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog-page-wrapper {
+  margin-top: 3rem;
+}
+
+.blog-page h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3.1rem;
+  line-height: 1.25rem;
+  overflow-wrap: break-word;
+}
+
+.blog-category-wrapper {
+  margin-top: 2rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1.6px solid #0e5055;
+}
+
+.blog-page-category {
+  background-color: #58969a;
+  color: white;
+  margin-top: 1.3rem;
+  padding: 0.3rem 1.3rem;
+  border-radius: 0.5rem;
+  width: fit-content;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.blog-page p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.09rem;
+  margin-top: 2rem;
+  padding-inline: 10rem;
+  text-align: justify;
+}
+
+.blog-page-editDelete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  margin-top: 0.4rem;
+  margin-right: 1rem;
+}
+
+.blog-page-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  margin-top: 0.4rem;
+  margin-left: 1rem;
+}
+
+/* Add New blog Page */
+.add-blog-section h4 {
+  line-height: 1.12;
+}
+
+#blogContent {
+  min-height: 130px;
+}
+
+#blogContentForEdit {
+  min-height: 130px;
+}
+
+/* Edit Page */
+.back-button {
+  margin-bottom: 1rem;
+}
+
+/* Custom button */
+.custom-btn-1 {
+  border-radius: 0.4rem;
+  text-decoration: none;
+  background-color: white;
+  color: #00838d;
+  border: 1px solid #00838d;
+}
+
+.custom-btn-1:hover {
+  background-color: #00838d;
+  color: white;
+  cursor: pointer;
+}
+
+.custom-btn-1:disabled {
+  opacity: 0.5;
+  background-color: white;
+  color: #00838d;
+}
